@@ -1,0 +1,25 @@
+{
+  "name": "SeasX/SeasStashPHP",
+  "description": "SeasLog -> Swoole -> ClickHouse",
+  "type": "project",
+  "keywords": ["seaslog", "SeasStash", "swoole", "clickhouse"],
+  "homepage": "https://github.com/SeasX/SeasStashPHP",
+  "require": {
+    "swlib/saber": "^1.0"
+  },
+  "require-dev": {
+    "eaglewu/swoole-ide-helper": "dev-master"
+  },
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "albert",
+      "email": "63851587@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SeasStash\\": "src/"
+    }
+  }
+}

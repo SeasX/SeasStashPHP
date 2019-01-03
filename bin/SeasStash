@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2018/12/29
+ * Time: 14:34
+ */
+
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+if ($argc < 2 || !in_array($argv[1], ['start', 'stop', 'reload'])) {
+    exit("please input the command like start|stop|reload");
+}
+
+$config = require_once dirname(__DIR__) . '/config/configs.php';
+
+$server = new \SeasStash\Server\HttpServer($config);
+$server->{$argv[1]}();
