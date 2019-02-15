@@ -1,5 +1,5 @@
 {
-  "name": "SeasX/SeasStashPHP",
+  "name": "seasx/seas-stash-php",
   "description": "SeasLog -> Swoole -> ClickHouse",
   "type": "project",
   "keywords": ["seaslog", "SeasStash", "swoole", "clickhouse"],
