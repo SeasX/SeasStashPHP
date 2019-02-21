@@ -53,7 +53,7 @@ RUN apk update && apk add --no-cache --virtual .build-deps \
     && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
     && mkdir -p /data
 
-ADD ./docker-php-ext-seaslog.ini /usr/local/etc/php/conf.d/docker-php-ext-seaslog.ini
+ADD ./docker/docker-php-ext-seaslog.ini /usr/local/etc/php/conf.d/docker-php-ext-seaslog.ini
 
 WORKDIR /data
 
