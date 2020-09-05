@@ -3,7 +3,7 @@ SeasLog -> Swoole -> ClickHouse
 
 ## 快速启动
 * 安装docker和docker-compose
-* 创建docker网络`docker create network SeasStash`
+* 创建docker网络`docker network create SeasStash`
 * cd 到项目根目录执行`composer install`
 * 启动项目`docker-compose up -d`
 
